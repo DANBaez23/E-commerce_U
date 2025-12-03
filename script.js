@@ -15,8 +15,8 @@ let productos = [];
 
 
 function listaCarrito(){
-    let listaCarrito = document.getElementById("carrito");
-    alert(`Productos en el carrito: ${productos.join(", ").textContent = JSON.stringify(productos)}`);
+    let listaCarrito = document.getElementById("carrito").querySelector('h2').textContent;
+    alert(`Productos en el carrito: ${listaCarrito}`);
 
 }
 

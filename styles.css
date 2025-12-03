@@ -1,7 +1,7 @@
 nav{
     margin-bottom: 20px;
     max-width: 100%;
-    background-color: #e66224;
+    background-color: #accbc3;
 }
 
 .nav_container{
@@ -73,7 +73,7 @@ body{
 }
 
 .card{
-    border: 2px solid #e66224;
+    border: 2px solid #10644f;
     border-radius: 10px;
     width: 300px;
     padding: 16px;
@@ -87,7 +87,7 @@ body{
 } 
 
 .card_button{
-    background-color: #e66224;
+    background-color: #10644f;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -96,7 +96,7 @@ body{
 }
 
 .card_button:hover{
-    background-color: #cc5120;
+    background-color: #accbc3;
 }
 
 footer{
