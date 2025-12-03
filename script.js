@@ -15,10 +15,10 @@ let productos = [];
 
 
 function listaCarrito(){
-    let listaCarrito = document.getElementById("carrito").querySelector('h2').textContent;
-    alert(`Productos en el carrito: ${listaCarrito}`);
-
-}
+    let listacarrito = document.getElementById("card_content").querySelector("#nombre").textContent = JSON.stringify(productos);
+        alert(`Tu lista de compra: ${listacarrito}`);
+    }
+    
 
 function actualizarCarrito() {
     if (productos.length === 0) {
@@ -48,7 +48,7 @@ function indiceCarrito() {
 }
 
 function add() {
-    let product = document.getElementById("agregar").verCarrito;
+    let product = document.getElementById("agregar");
     productos.push(product);
     indiceCarrito();
 }
