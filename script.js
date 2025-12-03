@@ -14,6 +14,12 @@ let productos = [];
 // });
 
 
+function listaCarrito(){
+    let listaCarrito = document.getElementById("carrito");
+    alert(`Productos en el carrito: ${productos.join(", ").textContent = JSON.stringify(productos)}`);
+
+}
+
 function actualizarCarrito() {
     if (productos.length === 0) {
         alert("El carrito está vacío.");
