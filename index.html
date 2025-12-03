@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+    <nav>
+        <div class="nav_container">
+            <div class="nav_logo">
+                <img src="./Assets/Logo_MT.png" alt="logo_Mi_Tiendita" class="nav_logo">
+            </div>
+            <div class="nav_menu">
+                <ul class="nav_ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Catálogo</li>
+                    <li>Contacto</li>
+                    <li>Servicios</li>
+                </ul>
+            </div>      
+            <div class="nav_content">
+                <img src="./Assets/icono_carrito.png" id="carrito" onclick="mostrarCarrito()" alt="icono_carrito">
+                <p id="nav_text">0</p>
+            </div>
+        </div>    
+    </nav>
+    </head>
+<body>
+        <div class="titulo_container">
+            <h1>Mi Tiendita</h1>
+            <button id="eliminar" onclick="eliminar()">Eliminar producto</button>
+        </div> 
+    <div id="card_container">
+        <div class="card">
+            <img src="../Assets/MacBook_Pro.png" alt="MacBook Pro">
+            <div class="card_content">
+                <h2 id="nombre" class="card_tittle">MacBook Pro M5</h2>
+                <p class="card_text">El último chip, con uno de los mejores equipos portátiles y el mejor SO</p>
+                <p id="precio">Precio: $7200000</p>      
+                <button id="agregar" onclick="add()" class="card_button">Agregar al carrito</button>
+            </div>    
+        </div>
+        <div class="card">
+            <img src="../Assets/MacBook_Air_M4.png" alt="MacBook Air M4">
+            <div class="card_content">
+                <h2 id="nombre" class="card_tittle">MacBook Air M4</h2>
+                <p class="card_text">Super liviano y con un chip tan potente, que <strong>poco</strong> no existe en su rendimiento</p>
+                <p id="precio">Precio: $4200000</p>
+                <button id="agregar" onclick="add()" class="card_button">Agregar al carrito </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/MacMini.png" alt="Mac Mini M4">
+            <div class="card_content">
+                <h2 id="nombre" class="card_tittle">Mac Mini M4</h2>
+                <p class="card_text">El más pequeño y con el poder de un Pro. Cabe en cualquier lugar y puede con casi todo </p>
+                <p id="precio">Precio: $2700000</p>
+                <button id="agregar" onclick="add()" class="card_button">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Mac_Studio.png" alt="Mac Studio">
+            <div class="card_content">
+                <h2 id="nombre" class="card_tittle">Mac Studio</h2>
+                <p class="card_text">Si quieres la mayor potencia en equipos de escritorio, seguro te va a interesar</p>
+                <p id="precio">Precio: $8200000</p>
+                <button id="agregar" onclick="add()" class="card_button">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/iMac.png" alt="iMac M4">
+            <div class="card_content">
+                <h2 id="nombre" class="card_tittle">iMac M4</h2>
+                <p class="card_text">El mejor de todos los AIO. Incréble en diseño y rendimiento. Llevalo todo en uno</p>
+                <p id="precio">Precio: $7200000</p>
+                <button id="agregar" onclick="add()" class="card_button">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+     <footer>
+        <div class="footer_container">   
+                <div class="footer_content">
+                    <img src="./Assets/Logo_MT.png" alt="Logo_MT">
+                </div>
+                <div class="footer_content">
+                    <h3>Mi Tiendita</h3>
+                    <p>Tu tienda de tecnología de confianza</p>
+                </div>
+                <div class="footer_content">
+                    <h3>Contacto</h3>
+                    <p>Email: abaezc@alumnoeseit.edu.co
+                </div>  
+        </div> 
+        <p>© 2025 Mi Tiendita. Todos los derechos reservados.</p>
+     </footer>
+</body>
+</html>
