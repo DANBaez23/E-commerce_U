@@ -1,5 +1,20 @@
 let productos = [];
 
+function add(button) {
+    const card = button.closest('.card');
+    const nombreElement = card.querySelector('.product-name');
+    const nombre = nombreElement ? nombreElement.textContent.trim() : 'Producto Desconocido';
+    const precioElement = card.querySelector('.card_price');
+    const precioNumerico = precioElement ? parseInt(precioElement.getAttribute('data-price')) : 0;
+    const productoAgregado = {
+        nombre: nombre,
+        precio: precioNumerico
+    }
+    productos.push(productoAgregado);
+    indiceCarrito();
+    alert(`Producto agregado: ${nombre}`);
+}
+
 function listaCarrito() {
     let listaProductos = "🛒 Tu lista de compra:\n\n";
     let totalPrecio = 0;
@@ -46,27 +61,13 @@ function indiceCarrito() {
     
 }
 
-function add(button) {
-    const card = button.closest('.card');
-    const nombreElement = card.querySelector('.product-name');
-    const nombre = nombreElement ? nombreElement.textContent.trim() : 'Producto Desconocido';
-    const precioElement = card.querySelector('.card_price');
-    const precioNumerico = precioElement ? parseInt(precioElement.getAttribute('data-price')) : 0;
-    const productoAgregado = {
-        nombre: nombre,
-        precio: precioNumerico
-    }
-    productos.push(productoAgregado);
-    indiceCarrito();
-    alert(`Producto agregado: ${nombre}`);
-}
+
 
 function eliminar(){
     let eliminarProducto = document.getElementById("eliminar");;
     productos.pop(eliminarProducto);
     indiceCarrito();
     actualizarCarrito();
-    alert(listaProductos);
 }
 
 
