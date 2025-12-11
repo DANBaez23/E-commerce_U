@@ -62,7 +62,6 @@ function indiceCarrito() {
 }
 
 
-
 function eliminar(){
     let eliminarProducto = document.getElementById("eliminar");;
     productos.pop(eliminarProducto);
